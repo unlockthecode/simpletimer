@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lock's Simple Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Timer</h1>
+            <div class="timer">
+                <input type="number" id="hrs" placeholder="HH" min="0">
+                <span>:</span>
+                <input type="number" id="mins" placeholder="MM" min="0" max="59">
+                <span>:</span>
+                <input type="number" id="secs" placeholder="HH" min="0" max="59">
+            </div>
+
+            <label>Upload a custom mp3 (optional):</label>
+            <input type="file" id="userAudio" accept=".mp3">
+            <button id="start">Start Timer</button>
+
+            <div id="countdown">00:00:00</div>
+        </div>
+
+        <audio id="defaultAudio" preload="auto">
+            <source src="/Alarm/audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
