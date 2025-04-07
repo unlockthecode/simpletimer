@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1{
+    color: whitesmoke;
+    font-variant: small-caps;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.timer input {
+    width: 60px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+#customAudio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.inputFile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="file"] {
+    cursor: pointer;
+    margin: 0;
+    display: none;
+}
+
+.customFileBtn {
+    background-color: #444;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#fileName {
+    font-size: 14px;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+#start {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#countdown {
+    font-size: 2em;
+    margin-top: 20px;
+}
